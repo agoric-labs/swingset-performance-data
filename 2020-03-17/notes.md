@@ -1,6 +1,6 @@
 Snapshot of performance benchmark data, 2020-03-17
 
-Run with commit Agoric@9d8b545f6f8d0372bc83a33db7dc9d6ee87a8027
+Run with commit [9d8b545f6f8d0372bc83a33db7dc9d6ee87a8027](https://github.com/Agoric/agoric-sdk/commit/9d8b545f6f8d0372bc83a33db7dc9d6ee87a8027)
 
 These data capture the state of affairs prior to beginning any of the work on
 pruning resolved promises.
