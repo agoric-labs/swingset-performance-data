@@ -1,0 +1,59 @@
+echo bin/runner --init --lmdb   --blockmode --logtimes --logmem run demo/megaPong 10000
+time bin/runner --init --lmdb   --blockmode --logtimes --logmem run demo/megaPong 10000
+mv stats-runner-* stats-lmdb-10k-nogc
+echo 1/12
+
+echo bin/runner --init --filedb --blockmode --logtimes --logmem run demo/megaPong 10000
+time bin/runner --init --filedb --blockmode --logtimes --logmem run demo/megaPong 10000
+mv stats-runner-* stats-filedb-10k-nogc
+echo 2/12
+
+echo bin/runner --init --memdb  --blockmode --logtimes --logmem run demo/megaPong 10000
+time bin/runner --init --memdb  --blockmode --logtimes --logmem run demo/megaPong 10000
+mv stats-runner-* stats-memdb-10k-nogc
+echo 3/12
+
+echo bin/runner --init --lmdb   --blockmode --logtimes --logmem --forcegc run demo/megaPong 10000
+time bin/runner --init --lmdb   --blockmode --logtimes --logmem --forcegc run demo/megaPong 10000
+mv stats-runner-* stats-lmdb-10k-gc
+echo 4/12
+
+echo bin/runner --init --filedb --blockmode --logtimes --logmem --forcegc run demo/megaPong 10000
+time bin/runner --init --filedb --blockmode --logtimes --logmem --forcegc run demo/megaPong 10000
+mv stats-runner-* stats-filedb-10k-gc
+echo 5/12
+
+echo bin/runner --init --memdb  --blockmode --logtimes --logmem --forcegc run demo/megaPong 10000
+time bin/runner --init --memdb  --blockmode --logtimes --logmem --forcegc run demo/megaPong 10000
+mv stats-runner-* stats-memdb-10k-gc
+echo 6/12
+
+echo bin/runner --init --lmdb   --blockmode --logtimes --logmem run demo/megaPong 100000
+time bin/runner --init --lmdb   --blockmode --logtimes --logmem run demo/megaPong 100000
+mv stats-runner-* stats-lmdb-100k-nogc
+echo 7/12
+
+echo bin/runner --init --filedb --blockmode --logtimes --logmem run demo/megaPong 100000
+time bin/runner --init --filedb --blockmode --logtimes --logmem run demo/megaPong 100000
+mv stats-runner-* stats-filedb-100k-nogc
+echo 8/12
+
+echo bin/runner --init --memdb  --blockmode --logtimes --logmem run demo/megaPong 100000
+time bin/runner --init --memdb  --blockmode --logtimes --logmem run demo/megaPong 100000
+mv stats-runner-* stats-memdb-100k-nogc
+echo 9/12
+
+echo bin/runner --init --lmdb   --blockmode --logtimes --logmem --forcegc run demo/megaPong 100000
+time bin/runner --init --lmdb   --blockmode --logtimes --logmem --forcegc run demo/megaPong 100000
+mv stats-runner-* stats-lmdb-100k-gc
+echo 10/12
+
+echo bin/runner --init --filedb --blockmode --logtimes --logmem --forcegc run demo/megaPong 100000
+time bin/runner --init --filedb --blockmode --logtimes --logmem --forcegc run demo/megaPong 100000
+mv stats-runner-* stats-filedb-100k-gc
+echo 11/12
+
+echo bin/runner --init --memdb  --blockmode --logtimes --logmem --forcegc run demo/megaPong 100000
+time bin/runner --init --memdb  --blockmode --logtimes --logmem --forcegc run demo/megaPong 100000
+mv stats-runner-* stats-memdb-100k-gc
+echo 12/12
