@@ -1,19 +1,15 @@
-echo bin/runner --init --blockmode --logall run demo/megaPong 10000
-time bin/runner --init --blockmode --logall run demo/megaPong 10000
-mv stats-runner-* stats-lmdb-10k-nogc
-echo 1/12
+echo 1/4
+echo bin/runner --init --blockmode --logall --logtag lmdb-10k-nogc run demo/megaPong 10000
+time bin/runner --init --blockmode --logall --logtag lmdb-10k-nogc run demo/megaPong 10000
 
-echo bin/runner --init --blockmode --logall --forcegc run demo/megaPong 10000
-time bin/runner --init --blockmode --logall --forcegc run demo/megaPong 10000
-mv stats-runner-* stats-lmdb-10k-gc
-echo 2/12
+echo 2/4
+echo bin/runner --init --blockmode --logall --forcegc --logtag lmdb-10k-gc run demo/megaPong 10000
+time bin/runner --init --blockmode --logall --forcegc --logtag lmdb-10k-gc run demo/megaPong 10000
 
-echo bin/runner --init --blockmode --logall run demo/megaPong 100000
-time bin/runner --init --blockmode --logall run demo/megaPong 100000
-mv stats-runner-* stats-lmdb-100k-nogc
-echo 3/12
+echo 3/4
+echo bin/runner --init --blockmode --logall --logtag lmdb-100k-nogc run demo/megaPong 100000
+time bin/runner --init --blockmode --logall --logtag lmdb-100k-nogc run demo/megaPong 100000
 
-echo bin/runner --init --blockmode --logall --forcegc run demo/megaPong 100000
-time bin/runner --init --blockmode --logall --forcegc run demo/megaPong 100000
-mv stats-runner-* stats-lmdb-100k-gc
-echo 4/12
+echo 4/4
+echo bin/runner --init --blockmode --logall --logtag lmdb-100k-gc --forcegc run demo/megaPong 100000
+time bin/runner --init --blockmode --logall --logtag lmdb-100k-gc --forcegc run demo/megaPong 100000
