@@ -95,7 +95,7 @@ Stats File                       | Rounds | `time` output
 `stats-full-metering-100`        |     100|`162.538u 4.277s 2:22.90 116.7%`
 `stats-full-metering-1`          |       1|`  9.215u 0.481s 0:06.86 141.2%`
 
-### Results `swingset-runner` demos
+### Timing results from running `swingset-runner` demos
 
 Another set of timings ran each of the current set of
 `swingset-runner` demo vat groups with the same set of conditions.
