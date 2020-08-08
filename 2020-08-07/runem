@@ -1,0 +1,19 @@
+#!/bin/csh
+
+set ALWAYS_OPTIONS = "--init --blockmode --blocksize 250 --logall --stats --benchmark 100"
+set CMD = "run demo/exchangeBenchmark"
+
+echo bin/runner ${ALWAYS_OPTIONS} --logtag no-metering ${CMD}
+time bin/runner ${ALWAYS_OPTIONS} --logtag no-metering ${CMD} >  no-metering.log
+
+echo bin/runner ${ALWAYS_OPTIONS} --logtag no-metering-indirect --indirect ${CMD}
+time bin/runner ${ALWAYS_OPTIONS} --logtag no-metering-indirect --indirect ${CMD} > no-metering-indirect.log
+
+echo bin/runner ${ALWAYS_OPTIONS} --logtag globals-only --globalmetering ${CMD}
+time bin/runner ${ALWAYS_OPTIONS} --logtag globals-only --globalmetering ${CMD} > globals-only.log
+
+echo bin/runner ${ALWAYS_OPTIONS} --logtag globals-indirect --globalmetering --indirect ${CMD}
+time bin/runner ${ALWAYS_OPTIONS} --logtag globals-indirect --globalmetering --indirect ${CMD} > globals-indirect.log
+
+echo bin/runner ${ALWAYS_OPTIONS} --logtag full-metering --meter ${CMD}
+time bin/runner ${ALWAYS_OPTIONS} --logtag full-metering --meter ${CMD} > full-metering.log
