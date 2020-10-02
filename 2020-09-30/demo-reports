@@ -1,0 +1,1309 @@
+bin/runner  --init --stats run demo/encouragementBot
+
+In 5 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            7         7         0         7    1.4000
+kernelDevices                            1         1         0         1    0.2000
+kernelPromises                           1         3         2         3    0.2000
+kpUnresolved                             0         3         3         2    0
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        1         3         2         3    0.2000
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         5                   2    0
+syscalls                                 8                                  1.6000
+syscallSend                              3                                  0.6000
+syscallSubscribe                         2                                  0.4000
+syscallFulfillToData                     3                                  0.6000
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               5                                  1
+dispatchDeliver                          3                                  0.6000
+dispatchNotifyFulfillToData              2                                  0.4000
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            15        20         5        18    3
+
+runner finished 5 cranks in 12656894 ns (2531378/crank)
+4.092u 0.576s 4.159
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/exchangeBenchmark/swingset.json run -- --prime
+
+In 244 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                           83        83         0        83    0.3402
+kernelDevices                            1         1         0         1    0.0041
+kernelPromises                          22       120        98        27    0.0902
+kpUnresolved                             1       120       119        11    0.0041
+kpFulfilledToPresence                    8        48        40         8    0.0328
+kpFulfilledToData                       13        71        58        15    0.0533
+kpRejected                               0         0         0         0    0
+runQueueLength                           0       244                  10    0
+syscalls                               365                                  1.4959
+syscallSend                            116                                  0.4754
+syscallSubscribe                       129                                  0.5287
+syscallFulfillToData                    71                                  0.2910
+syscallFulfillToPresence                48                                  0.1967
+syscallReject                            0                                  0
+syscallCallNow                           1                                  0.0041
+dispatches                             243                                  0.9959
+dispatchDeliver                        115                                  0.4713
+dispatchNotifyFulfillToData             69                                  0.2828
+dispatchNotifyFulfillToPresence         59                                  0.2418
+dispatchReject                           0                                  0
+clistEntries                           228       459       231       235    0.9344
+
+runner finished 244 cranks in 1418753219 ns (5814562/crank)
+8.154u 0.541s 6.139
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/justReply
+
+In 5 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            7         7         0         7    1.4000
+kernelDevices                            1         1         0         1    0.2000
+kernelPromises                           1         3         2         3    0.2000
+kpUnresolved                             0         3         3         2    0
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        1         3         2         3    0.2000
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         5                   2    0
+syscalls                                 8                                  1.6000
+syscallSend                              3                                  0.6000
+syscallSubscribe                         2                                  0.4000
+syscallFulfillToData                     3                                  0.6000
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               5                                  1
+dispatchDeliver                          3                                  0.6000
+dispatchNotifyFulfillToData              2                                  0.4000
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            15        20         5        18    3
+
+runner finished 5 cranks in 13776145 ns (2755229/crank)
+3.651u 0.323s 2.932
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/megaPong -- 20
+
+In 55 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            9         9         0         9    0.1636
+kernelDevices                            1         1         0         1    0.0182
+kernelPromises                           1        28        27         7    0.0182
+kpUnresolved                             0        28        28         5    0
+kpFulfilledToPresence                    0         1         1         1    0
+kpFulfilledToData                        1        27        26         5    0.0182
+kpRejected                               0         0         0         0    0
+runQueueLength                           0        55                   6    0
+syscalls                                83                                  1.5091
+syscallSend                             28                                  0.5091
+syscallSubscribe                        27                                  0.4909
+syscallFulfillToData                    27                                  0.4909
+syscallFulfillToPresence                 1                                  0.0182
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                              55                                  1
+dispatchDeliver                         28                                  0.5091
+dispatchNotifyFulfillToData             26                                  0.4727
+dispatchNotifyFulfillToPresence          1                                  0.0182
+dispatchReject                           0                                  0
+clistEntries                            19        74        55        24    0.3455
+
+runner finished 55 cranks in 70007412 ns (1272862/crank)
+3.854u 0.335s 3.090
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/meterExhaustion/swingset.json run
+
+In 9 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            8         8         0         8    0.8889
+kernelDevices                            1         1         0         1    0.1111
+kernelPromises                           2         6         4         4    0.2222
+kpUnresolved                             2         6         4         3    0.2222
+kpFulfilledToPresence                    0         1         1         1    0
+kpFulfilledToData                        0         3         3         2    0
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         9                   2    0
+syscalls                                15                                  1.6667
+syscallSend                              6                                  0.6667
+syscallSubscribe                         4                                  0.4444
+syscallFulfillToData                     3                                  0.3333
+syscallFulfillToPresence                 1                                  0.1111
+syscallReject                            0                                  0
+syscallCallNow                           1                                  0.1111
+dispatches                               9                                  1
+dispatchDeliver                          6                                  0.6667
+dispatchNotifyFulfillToData              2                                  0.2222
+dispatchNotifyFulfillToPresence          1                                  0.1111
+dispatchReject                           0                                  0
+clistEntries                            21        28         7        21    2.3333
+
+runner finished 9 cranks in 237121812 ns (26346868/crank)
+4.296u 0.401s 3.485
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/pingPongBenchmark
+
+In 11 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            9         9         0         9    0.8182
+kernelDevices                            1         1         0         1    0.0909
+kernelPromises                           1         6         5         5    0.0909
+kpUnresolved                             0         6         6         4    0
+kpFulfilledToPresence                    0         1         1         1    0
+kpFulfilledToData                        1         5         4         4    0.0909
+kpRejected                               0         0         0         0    0
+runQueueLength                           0        11                   4    0
+syscalls                                17                                  1.5455
+syscallSend                              6                                  0.5455
+syscallSubscribe                         5                                  0.4545
+syscallFulfillToData                     5                                  0.4545
+syscallFulfillToPresence                 1                                  0.0909
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                              11                                  1
+dispatchDeliver                          6                                  0.5455
+dispatchNotifyFulfillToData              4                                  0.3636
+dispatchNotifyFulfillToPresence          1                                  0.0909
+dispatchReject                           0                                  0
+clistEntries                            19        30        11        22    1.7273
+
+runner finished 11 cranks in 22821854 ns (2074714/crank)
+4.013u 0.384s 3.284
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/promiseChainBenchmark
+
+In 5 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            6         6         0         6    1.2000
+kernelDevices                            1         1         0         1    0.2000
+kernelPromises                           3         4         1         4    0.6000
+kpUnresolved                             1         4         3         3    0.2000
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        2         3         1         3    0.4000
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         5                   2    0
+syscalls                                 9                                  1.8000
+syscallSend                              3                                  0.6000
+syscallSubscribe                         3                                  0.6000
+syscallFulfillToData                     3                                  0.6000
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               5                                  1
+dispatchDeliver                          3                                  0.6000
+dispatchNotifyFulfillToData              2                                  0.4000
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            16        19         3        16    3.2000
+
+runner finished 5 cranks in 16079071 ns (3215814/crank)
+3.717u 0.333s 2.973
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/resolveCase1
+
+In 4 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            6         6         0         6    1.5000
+kernelDevices                            1         1         0         1    0.2500
+kernelPromises                           1         3         2         3    0.2500
+kpUnresolved                             0         3         3         3    0
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        1         3         2         3    0.2500
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         4                   2    0
+syscalls                                 7                                  1.7500
+syscallSend                              2                                  0.5000
+syscallSubscribe                         2                                  0.5000
+syscallFulfillToData                     3                                  0.7500
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               4                                  1
+dispatchDeliver                          2                                  0.5000
+dispatchNotifyFulfillToData              2                                  0.5000
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            12        17         5        15    3
+
+runner finished 4 cranks in 13503724 ns (3375931/crank)
+3.643u 0.336s 2.957
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/resolveCase2
+
+In 4 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            6         6         0         6    1.5000
+kernelDevices                            1         1         0         1    0.2500
+kernelPromises                           1         3         2         3    0.2500
+kpUnresolved                             0         3         3         3    0
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        1         3         2         3    0.2500
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         4                   2    0
+syscalls                                 7                                  1.7500
+syscallSend                              2                                  0.5000
+syscallSubscribe                         2                                  0.5000
+syscallFulfillToData                     3                                  0.7500
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               4                                  1
+dispatchDeliver                          2                                  0.5000
+dispatchNotifyFulfillToData              2                                  0.5000
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            12        17         5        15    3
+
+runner finished 4 cranks in 11275089 ns (2818772/crank)
+3.664u 0.332s 2.955
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/resolveCase3
+
+In 4 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            6         6         0         6    1.5000
+kernelDevices                            1         1         0         1    0.2500
+kernelPromises                           1         3         2         3    0.2500
+kpUnresolved                             0         3         3         3    0
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        1         3         2         3    0.2500
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         4                   1    0
+syscalls                                 7                                  1.7500
+syscallSend                              2                                  0.5000
+syscallSubscribe                         2                                  0.5000
+syscallFulfillToData                     3                                  0.7500
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               4                                  1
+dispatchDeliver                          2                                  0.5000
+dispatchNotifyFulfillToData              2                                  0.5000
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            12        17         5        16    3
+
+runner finished 4 cranks in 14704620 ns (3676155/crank)
+3.862u 0.351s 3.113
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/resolveChain/swingset.json run
+
+In 14 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            6         6         0         6    0.4286
+kernelDevices                            1         1         0         1    0.0714
+kernelPromises                           6        10         4         7    0.4286
+kpUnresolved                             1        10         9         3    0.0714
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        5         9         4         6    0.3571
+kpRejected                               0         0         0         0    0
+runQueueLength                           0        14                   2    0
+syscalls                                24                                  1.7143
+syscallSend                              6                                  0.4286
+syscallSubscribe                         9                                  0.6429
+syscallFulfillToData                     9                                  0.6429
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                              14                                  1
+dispatchDeliver                          6                                  0.4286
+dispatchNotifyFulfillToData              8                                  0.5714
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            22        31         9        23    1.5714
+
+runner finished 14 cranks in 21042368 ns (1503026/crank)
+3.884u 0.366s 3.162
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/resolveCircular
+
+In 7 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            6         6         0         6    0.8571
+kernelDevices                            1         1         0         1    0.1429
+kernelPromises                           3         4         1         4    0.4286
+kpUnresolved                             0         4         4         4    0
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        3         4         1         4    0.4286
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         7                   3    0
+syscalls                                13                                  1.8571
+syscallSend                              4                                  0.5714
+syscallSubscribe                         5                                  0.7143
+syscallFulfillToData                     4                                  0.5714
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               7                                  1
+dispatchDeliver                          4                                  0.5714
+dispatchNotifyFulfillToData              3                                  0.4286
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            16        19         3        18    2.2857
+
+runner finished 7 cranks in 16299757 ns (2328536/crank)
+3.674u 0.322s 2.929
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/resolveDelayedPipeline
+
+In 7 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            7         7         0         7    1
+kernelDevices                            1         1         0         1    0.1429
+kernelPromises                           1         4         3         3    0.1429
+kpUnresolved                             0         4         4         3    0
+kpFulfilledToPresence                    0         1         1         1    0
+kpFulfilledToData                        1         3         2         2    0.1429
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         7                   2    0
+syscalls                                11                                  1.5714
+syscallSend                              4                                  0.5714
+syscallSubscribe                         3                                  0.4286
+syscallFulfillToData                     3                                  0.4286
+syscallFulfillToPresence                 1                                  0.1429
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               7                                  1
+dispatchDeliver                          4                                  0.5714
+dispatchNotifyFulfillToData              2                                  0.2857
+dispatchNotifyFulfillToPresence          1                                  0.1429
+dispatchReject                           0                                  0
+clistEntries                            14        21         7        16    2
+
+runner finished 7 cranks in 16812747 ns (2401821/crank)
+3.630u 0.319s 2.899
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/resolveInArrayCase1
+
+In 4 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            6         6         0         6    1.5000
+kernelDevices                            1         1         0         1    0.2500
+kernelPromises                           1         3         2         3    0.2500
+kpUnresolved                             0         3         3         3    0
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        1         3         2         3    0.2500
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         4                   2    0
+syscalls                                 7                                  1.7500
+syscallSend                              2                                  0.5000
+syscallSubscribe                         2                                  0.5000
+syscallFulfillToData                     3                                  0.7500
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               4                                  1
+dispatchDeliver                          2                                  0.5000
+dispatchNotifyFulfillToData              2                                  0.5000
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            12        17         5        15    3
+
+runner finished 4 cranks in 13561202 ns (3390300/crank)
+3.625u 0.323s 2.904
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/resolveIndirect
+
+In 9 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            6         6         0         6    0.6667
+kernelDevices                            1         1         0         1    0.1111
+kernelPromises                           3         4         1         4    0.3333
+kpUnresolved                             0         4         4         4    0
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        3         4         1         4    0.3333
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         9                   4    0
+syscalls                                13                                  1.4444
+syscallSend                              4                                  0.4444
+syscallSubscribe                         5                                  0.5556
+syscallFulfillToData                     4                                  0.4444
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               9                                  1
+dispatchDeliver                          4                                  0.4444
+dispatchNotifyFulfillToData              5                                  0.5556
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            14        21         7        18    1.5556
+
+runner finished 9 cranks in 17666301 ns (1962922/crank)
+3.712u 0.330s 2.978
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/resolvePassResult
+
+In 6 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            6         6         0         6    1
+kernelDevices                            1         1         0         1    0.1667
+kernelPromises                           1         3         2         3    0.1667
+kpUnresolved                             0         3         3         3    0
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        1         3         2         3    0.1667
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         6                   3    0
+syscalls                                 9                                  1.5000
+syscallSend                              3                                  0.5000
+syscallSubscribe                         3                                  0.5000
+syscallFulfillToData                     3                                  0.5000
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               6                                  1
+dispatchDeliver                          3                                  0.5000
+dispatchNotifyFulfillToData              3                                  0.5000
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            12        18         6        16    2
+
+runner finished 6 cranks in 12870459 ns (2145076/crank)
+3.640u 0.321s 2.924
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/resolvePassResultPromise
+
+In 5 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            6         6         0         6    1.2000
+kernelDevices                            1         1         0         1    0.2000
+kernelPromises                           1         3         2         3    0.2000
+kpUnresolved                             0         3         3         3    0
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        1         3         2         3    0.2000
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         5                   2    0
+syscalls                                 9                                  1.8000
+syscallSend                              3                                  0.6000
+syscallSubscribe                         3                                  0.6000
+syscallFulfillToData                     3                                  0.6000
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               5                                  1
+dispatchDeliver                          3                                  0.6000
+dispatchNotifyFulfillToData              2                                  0.4000
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            12        17         5        16    2.4000
+
+runner finished 5 cranks in 12621475 ns (2524295/crank)
+3.662u 0.324s 2.939
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/resolvePipelined
+
+In 6 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            7         7         0         7    1.1667
+kernelDevices                            1         1         0         1    0.1667
+kernelPromises                           1         3         2         3    0.1667
+kpUnresolved                             0         3         3         3    0
+kpFulfilledToPresence                    0         1         1         1    0
+kpFulfilledToData                        1         2         1         2    0.1667
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         6                   3    0
+syscalls                                 9                                  1.5000
+syscallSend                              3                                  0.5000
+syscallSubscribe                         3                                  0.5000
+syscallFulfillToData                     2                                  0.3333
+syscallFulfillToPresence                 1                                  0.1667
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               6                                  1
+dispatchDeliver                          3                                  0.5000
+dispatchNotifyFulfillToData              1                                  0.1667
+dispatchNotifyFulfillToPresence          2                                  0.3333
+dispatchReject                           0                                  0
+clistEntries                            14        20         6        17    2.3333
+
+runner finished 6 cranks in 16246825 ns (2707804/crank)
+3.708u 0.331s 2.963
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/resolvePromiseComplicated
+
+In 10 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            7         7         0         7    0.7000
+kernelDevices                            1         1         0         1    0.1000
+kernelPromises                           1         5         4         5    0.1000
+kpUnresolved                             0         5         5         4    0
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        1         5         4         5    0.1000
+kpRejected                               0         0         0         0    0
+runQueueLength                           0        10                   5    0
+syscalls                                16                                  1.6000
+syscallSend                              5                                  0.5000
+syscallSubscribe                         6                                  0.6000
+syscallFulfillToData                     5                                  0.5000
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                              10                                  1
+dispatchDeliver                          5                                  0.5000
+dispatchNotifyFulfillToData              5                                  0.5000
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            15        25        10        21    1.5000
+
+runner finished 10 cranks in 17897298 ns (1789729/crank)
+3.648u 0.323s 2.923
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/resolveSimpleCicular
+
+In 5 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            6         6         0         6    1.2000
+kernelDevices                            1         1         0         1    0.2000
+kernelPromises                           2         3         1         3    0.4000
+kpUnresolved                             0         3         3         3    0
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        2         3         1         3    0.4000
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         5                   2    0
+syscalls                                 9                                  1.8000
+syscallSend                              3                                  0.6000
+syscallSubscribe                         3                                  0.6000
+syscallFulfillToData                     3                                  0.6000
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               5                                  1
+dispatchDeliver                          3                                  0.6000
+dispatchNotifyFulfillToData              2                                  0.4000
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            14        17         3        16    2.8000
+
+runner finished 5 cranks in 14434484 ns (2886896/crank)
+3.613u 0.323s 2.891
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/resolveWithEmbeddedPromise
+
+In 8 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            6         6         0         6    0.7500
+kernelDevices                            1         1         0         1    0.1250
+kernelPromises                           3         5         2         5    0.3750
+kpUnresolved                             0         5         5         4    0
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        3         5         2         5    0.3750
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         8                   3    0
+syscalls                                14                                  1.7500
+syscallSend                              4                                  0.5000
+syscallSubscribe                         5                                  0.6250
+syscallFulfillToData                     5                                  0.6250
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               8                                  1
+dispatchDeliver                          4                                  0.5000
+dispatchNotifyFulfillToData              4                                  0.5000
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            14        21         7        19    1.7500
+
+runner finished 8 cranks in 15962122 ns (1995265/crank)
+3.720u 0.329s 2.972
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/simplePromisePass
+
+In 6 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            7         7         0         7    1.1667
+kernelDevices                            1         1         0         1    0.1667
+kernelPromises                           1         4         3         4    0.1667
+kpUnresolved                             0         4         4         3    0
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        1         4         3         4    0.1667
+kpRejected                               0         0         0         0    0
+runQueueLength                           0         6                   3    0
+syscalls                                10                                  1.6667
+syscallSend                              3                                  0.5000
+syscallSubscribe                         3                                  0.5000
+syscallFulfillToData                     4                                  0.6667
+syscallFulfillToPresence                 0                                  0
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                               6                                  1
+dispatchDeliver                          3                                  0.5000
+dispatchNotifyFulfillToData              3                                  0.5000
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           0                                  0
+clistEntries                            15        22         7        19    2.5000
+
+runner finished 6 cranks in 15480382 ns (2580063/crank)
+3.649u 0.324s 2.914
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/swapBenchmark/swingset.json run -- --prime
+
+In 294 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                           88        88         0        88    0.2993
+kernelDevices                            1         1         0         1    0.0034
+kernelPromises                          27       147       120        34    0.0918
+kpUnresolved                             0       147       147        11    0
+kpFulfilledToPresence                   12        56        44        12    0.0408
+kpFulfilledToData                       15        89        74        17    0.0510
+kpRejected                               0         2         2         1    0
+runQueueLength                           0       294                  12    0
+syscalls                               447                                  1.5204
+syscallSend                            143                                  0.4864
+syscallSubscribe                       153                                  0.5204
+syscallFulfillToData                    89                                  0.3027
+syscallFulfillToPresence                56                                  0.1905
+syscallReject                            2                                  0.0068
+syscallCallNow                           4                                  0.0136
+dispatches                             289                                  0.9830
+dispatchDeliver                        138                                  0.4694
+dispatchNotifyFulfillToData             82                                  0.2789
+dispatchNotifyFulfillToPresence         65                                  0.2211
+dispatchReject                           2                                  0.0068
+clistEntries                           251       527       276       259    0.8537
+
+runner finished 294 cranks in 2070143753 ns (7041305/crank)
+9.228u 0.557s 6.929
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/terminateVat/swingset.json run
+
+In 25 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            8         8         0         8    0.3200
+kernelDevices                            1         1         0         1    0.0400
+kernelPromises                           3        14        11         5    0.1200
+kpUnresolved                             0        14        14         4    0
+kpFulfilledToPresence                    0         1         1         1    0
+kpFulfilledToData                        2         9         7         3    0.0800
+kpRejected                               1         4         3         2    0.0400
+runQueueLength                           0        25                   4    0
+syscalls                                39                                  1.5600
+syscallSend                             14                                  0.5600
+syscallSubscribe                        11                                  0.4400
+syscallFulfillToData                     9                                  0.3600
+syscallFulfillToPresence                 1                                  0.0400
+syscallReject                            2                                  0.0800
+syscallCallNow                           2                                  0.0800
+dispatches                              24                                  0.9600
+dispatchDeliver                         13                                  0.5200
+dispatchNotifyFulfillToData              5                                  0.2000
+dispatchNotifyFulfillToPresence          1                                  0.0400
+dispatchReject                           4                                  0.1600
+clistEntries                            21        43        22        25    0.8400
+
+runner finished 25 cranks in 315050763 ns (12602030/crank)
+4.671u 0.427s 3.772
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/vatFailure/swingset.json run -- --bestatic
+
+In 9 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            7         7         0         7    0.7778
+kernelDevices                            1         1         0         1    0.1111
+kernelPromises                           2         5         3         5    0.2222
+kpUnresolved                             0         5         5         4    0
+kpFulfilledToPresence                    0         0         0         0    0
+kpFulfilledToData                        1         1         0         1    0.1111
+kpRejected                               1         4         3         4    0.1111
+runQueueLength                          -1         9                   4   -0.1111
+syscalls                                11                                  1.2222
+syscallSend                              6                                  0.6667
+syscallSubscribe                         3                                  0.3333
+syscallFulfillToData                     1                                  0.1111
+syscallFulfillToPresence                 0                                  0
+syscallReject                            1                                  0.1111
+syscallCallNow                           0                                  0
+dispatches                               8                                  0.8889
+dispatchDeliver                          5                                  0.5556
+dispatchNotifyFulfillToData              0                                  0
+dispatchNotifyFulfillToPresence          0                                  0
+dispatchReject                           3                                  0.3333
+clistEntries                            16        21         5        19    1.7778
+
+runner finished 10 cranks in 18390722 ns (1839072/crank)
+3.935u 0.359s 3.161
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/vatFailure/swingset.json run -- --bedynamic
+
+In 16 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                           10        10         0        10    0.6250
+kernelDevices                            1         1         0         1    0.0625
+kernelPromises                           2         9         7         6    0.1250
+kpUnresolved                             0         9         9         5    0
+kpFulfilledToPresence                    0         1         1         1    0
+kpFulfilledToData                        1         4         3         2    0.0625
+kpRejected                               1         4         3         4    0.0625
+runQueueLength                          -1        16                   4   -0.0625
+syscalls                                23                                  1.4375
+syscallSend                             10                                  0.6250
+syscallSubscribe                         6                                  0.3750
+syscallFulfillToData                     4                                  0.2500
+syscallFulfillToPresence                 1                                  0.0625
+syscallReject                            1                                  0.0625
+syscallCallNow                           1                                  0.0625
+dispatches                              15                                  0.9375
+dispatchDeliver                          9                                  0.5625
+dispatchNotifyFulfillToData              1                                  0.0625
+dispatchNotifyFulfillToPresence          1                                  0.0625
+dispatchReject                           4                                  0.2500
+clistEntries                            24        36        12        29    1.5000
+
+runner finished 17 cranks in 247013606 ns (14530212/crank)
+4.172u 0.375s 3.324
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/vatResolveTest
+
+In 15 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            8         8         0         8    0.5333
+kernelDevices                            1         1         0         1    0.0667
+kernelPromises                           1         8         7         8    0.0667
+kpUnresolved                             0         8         8         6    0
+kpFulfilledToPresence                    0         1         1         1    0
+kpFulfilledToData                        1         7         6         6    0.0667
+kpRejected                               0         0         0         0    0
+runQueueLength                           0        15                   7    0
+syscalls                                24                                  1.6000
+syscallSend                              8                                  0.5333
+syscallSubscribe                         8                                  0.5333
+syscallFulfillToData                     7                                  0.4667
+syscallFulfillToPresence                 1                                  0.0667
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                              15                                  1
+dispatchDeliver                          8                                  0.5333
+dispatchNotifyFulfillToData              6                                  0.4000
+dispatchNotifyFulfillToPresence          1                                  0.0667
+dispatchReject                           0                                  0
+clistEntries                            16        31        15        25    1.0667
+
+runner finished 15 cranks in 25030976 ns (1668731/crank)
+3.906u 0.360s 3.166
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats run demo/vatResolveTestSimple
+
+In 11 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            7         7         0         7    0.6364
+kernelDevices                            1         1         0         1    0.0909
+kernelPromises                           1         6         5         6    0.0909
+kpUnresolved                             0         6         6         4    0
+kpFulfilledToPresence                    0         1         1         1    0
+kpFulfilledToData                        1         5         4         4    0.0909
+kpRejected                               0         0         0         0    0
+runQueueLength                           0        11                   5    0
+syscalls                                18                                  1.6364
+syscallSend                              6                                  0.5455
+syscallSubscribe                         6                                  0.5455
+syscallFulfillToData                     5                                  0.4545
+syscallFulfillToPresence                 1                                  0.0909
+syscallReject                            0                                  0
+syscallCallNow                           0                                  0
+dispatches                              11                                  1
+dispatchDeliver                          6                                  0.5455
+dispatchNotifyFulfillToData              4                                  0.3636
+dispatchNotifyFulfillToPresence          1                                  0.0909
+dispatchReject                           0                                  0
+clistEntries                            14        25        11        21    1.2727
+
+runner finished 11 cranks in 21193908 ns (1926718/crank)
+3.896u 0.350s 3.115
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/zoeTests/swingset.json run -- simpleExchangeOk
+
+In 187 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                           75        75         0        75    0.4011
+kernelDevices                            1         1         0         1    0.0053
+kernelPromises                           6        95        89        16    0.0321
+kpUnresolved                             1        95        94        12    0.0053
+kpFulfilledToPresence                    0        53        53         8    0
+kpFulfilledToData                        5        41        36         8    0.0267
+kpRejected                               0         0         0         0    0
+runQueueLength                           0       187                   9    0
+syscalls                               283                                  1.5134
+syscallSend                             92                                  0.4920
+syscallSubscribe                        96                                  0.5134
+syscallFulfillToData                    41                                  0.2193
+syscallFulfillToPresence                53                                  0.2834
+syscallReject                            0                                  0
+syscallCallNow                           1                                  0.0053
+dispatches                             186                                  0.9947
+dispatchDeliver                         91                                  0.4866
+dispatchNotifyFulfillToData             39                                  0.2086
+dispatchNotifyFulfillToPresence         56                                  0.2995
+dispatchReject                           0                                  0
+clistEntries                           210       395       185       215    1.1230
+
+runner finished 187 cranks in 1693052951 ns (9053759/crank)
+10.848u 0.643s 8.195
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/zoeTests/swingset.json run -- simpleExchangeNotifier
+
+In 303 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                          107       107         0       107    0.3531
+kernelDevices                            1         1         0         1    0.0033
+kernelPromises                          19       154       135        23    0.0627
+kpUnresolved                             8       154       146        12    0.0264
+kpFulfilledToPresence                    0        74        74         8    0
+kpFulfilledToData                       11        72        61        12    0.0363
+kpRejected                               0         0         0         0    0
+runQueueLength                           0       303                  10    0
+syscalls                               458                                  1.5116
+syscallSend                            150                                  0.4950
+syscallSubscribe                       161                                  0.5314
+syscallFulfillToData                    72                                  0.2376
+syscallFulfillToPresence                74                                  0.2442
+syscallReject                            0                                  0
+syscallCallNow                           1                                  0.0033
+dispatches                             302                                  0.9967
+dispatchDeliver                        149                                  0.4917
+dispatchNotifyFulfillToData             70                                  0.2310
+dispatchNotifyFulfillToPresence         83                                  0.2739
+dispatchReject                           0                                  0
+clistEntries                           303       592       289       310    1
+
+runner finished 303 cranks in 1534388827 ns (5063989/crank)
+11.044u 0.649s 8.325
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/zoeTests/swingset.json run -- autoswapOk
+
+In 287 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                          110       110         0       110    0.3833
+kernelDevices                            1         1         0         1    0.0035
+kernelPromises                          11       145       134        17    0.0383
+kpUnresolved                             2       145       143        12    0.0070
+kpFulfilledToPresence                    0        70        70         8    0
+kpFulfilledToData                        9        73        64        12    0.0314
+kpRejected                               0         0         0         0    0
+runQueueLength                           0       287                   9    0
+syscalls                               433                                  1.5087
+syscallSend                            142                                  0.4948
+syscallSubscribe                       147                                  0.5122
+syscallFulfillToData                    73                                  0.2544
+syscallFulfillToPresence                70                                  0.2439
+syscallReject                            0                                  0
+syscallCallNow                           1                                  0.0035
+dispatches                             286                                  0.9965
+dispatchDeliver                        141                                  0.4913
+dispatchNotifyFulfillToData             71                                  0.2474
+dispatchNotifyFulfillToPresence         74                                  0.2578
+dispatchReject                           0                                  0
+clistEntries                           295       575       280       300    1.0279
+
+runner finished 287 cranks in 1786704782 ns (6225452/crank)
+10.661u 0.631s 8.115
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/zoeTests/swingset.json run -- automaticRefundOk
+
+In 184 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                           75        75         0        75    0.4076
+kernelDevices                            1         1         0         1    0.0054
+kernelPromises                           8        93        85        14    0.0435
+kpUnresolved                             1        93        92        12    0.0054
+kpFulfilledToPresence                    1        52        51         8    0.0054
+kpFulfilledToData                        6        40        34         7    0.0326
+kpRejected                               0         0         0         0    0
+runQueueLength                           0       184                   9    0
+syscalls                               278                                  1.5109
+syscallSend                             90                                  0.4891
+syscallSubscribe                        95                                  0.5163
+syscallFulfillToData                    40                                  0.2174
+syscallFulfillToPresence                52                                  0.2826
+syscallReject                            0                                  0
+syscallCallNow                           1                                  0.0054
+dispatches                             183                                  0.9946
+dispatchDeliver                         89                                  0.4837
+dispatchNotifyFulfillToData             38                                  0.2065
+dispatchNotifyFulfillToPresence         56                                  0.3043
+dispatchReject                           0                                  0
+clistEntries                           212       392       180       217    1.1522
+
+runner finished 184 cranks in 1031990385 ns (5608643/crank)
+9.750u 0.625s 7.458
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/zoeTests/swingset.json run -- coveredCallOk
+
+In 193 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                           76        76         0        76    0.3938
+kernelDevices                            1         1         0         1    0.0052
+kernelPromises                           8        98        90        20    0.0415
+kpUnresolved                             0        98        98        12    0
+kpFulfilledToPresence                    2        53        51         8    0.0104
+kpFulfilledToData                        6        44        38         9    0.0311
+kpRejected                               0         1         1         1    0
+runQueueLength                           0       193                  11    0
+syscalls                               294                                  1.5233
+syscallSend                             95                                  0.4922
+syscallSubscribe                        99                                  0.5130
+syscallFulfillToData                    44                                  0.2280
+syscallFulfillToPresence                53                                  0.2746
+syscallReject                            1                                  0.0052
+syscallCallNow                           2                                  0.0104
+dispatches                             192                                  0.9948
+dispatchDeliver                         94                                  0.4870
+dispatchNotifyFulfillToData             40                                  0.2073
+dispatchNotifyFulfillToPresence         56                                  0.2902
+dispatchReject                           1                                  0.0052
+clistEntries                           215       404       189       222    1.1140
+
+runner finished 193 cranks in 1369796228 ns (7097389/crank)
+10.202u 0.626s 7.730
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/zoeTests/swingset.json run -- swapForOptionOk
+
+In 344 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                          119       119         0       119    0.3459
+kernelDevices                            1         1         0         1    0.0029
+kernelPromises                          15       175       160        28    0.0436
+kpUnresolved                             0       175       175        22    0
+kpFulfilledToPresence                    4        92        88        16    0.0116
+kpFulfilledToData                       11        81        70        14    0.0320
+kpRejected                               0         2         2         1    0
+runQueueLength                           0       344                  17    0
+syscalls                               525                                  1.5262
+syscallSend                            167                                  0.4855
+syscallSubscribe                       179                                  0.5203
+syscallFulfillToData                    81                                  0.2355
+syscallFulfillToPresence                92                                  0.2674
+syscallReject                            2                                  0.0058
+syscallCallNow                           4                                  0.0116
+dispatches                             343                                  0.9971
+dispatchDeliver                        166                                  0.4826
+dispatchNotifyFulfillToData             74                                  0.2151
+dispatchNotifyFulfillToPresence         99                                  0.2878
+dispatchReject                           2                                  0.0058
+clistEntries                           373       711       338       381    1.0843
+
+runner finished 344 cranks in 2331430901 ns (6777415/crank)
+11.222u 0.660s 8.653
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/zoeTests/swingset.json run -- secondPriceAuctionOk
+
+In 345 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                          111       111         0       111    0.3217
+kernelDevices                            1         1         0         1    0.0029
+kernelPromises                          12       172       160        32    0.0348
+kpUnresolved                             1       172       171        22    0.0029
+kpFulfilledToPresence                    2        94        92        16    0.0058
+kpFulfilledToData                        9        77        68        14    0.0261
+kpRejected                               0         0         0         0    0
+runQueueLength                           0       345                  17    0
+syscalls                               518                                  1.5014
+syscallSend                            166                                  0.4812
+syscallSubscribe                       180                                  0.5217
+syscallFulfillToData                    77                                  0.2232
+syscallFulfillToPresence                94                                  0.2725
+syscallReject                            0                                  0
+syscallCallNow                           1                                  0.0029
+dispatches                             343                                  0.9942
+dispatchDeliver                        164                                  0.4754
+dispatchNotifyFulfillToData             75                                  0.2174
+dispatchNotifyFulfillToPresence        104                                  0.3014
+dispatchReject                           0                                  0
+clistEntries                           345       685       340       356    1
+
+runner finished 345 cranks in 1435797238 ns (4161731/crank)
+10.289u 0.608s 7.788
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/zoeTests/swingset.json run -- atomicSwapOk
+
+In 191 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                           75        75         0        75    0.3927
+kernelDevices                            1         1         0         1    0.0052
+kernelPromises                           8        97        89        21    0.0419
+kpUnresolved                             0        97        97        12    0
+kpFulfilledToPresence                    2        53        51         8    0.0105
+kpFulfilledToData                        6        43        37         9    0.0314
+kpRejected                               0         1         1         1    0
+runQueueLength                           0       191                  11    0
+syscalls                               291                                  1.5236
+syscallSend                             94                                  0.4921
+syscallSubscribe                        98                                  0.5131
+syscallFulfillToData                    43                                  0.2251
+syscallFulfillToPresence                53                                  0.2775
+syscallReject                            1                                  0.0052
+syscallCallNow                           2                                  0.0105
+dispatches                             190                                  0.9948
+dispatchDeliver                         93                                  0.4869
+dispatchNotifyFulfillToData             39                                  0.2042
+dispatchNotifyFulfillToPresence         56                                  0.2932
+dispatchReject                           1                                  0.0052
+clistEntries                           211       398       187       220    1.1047
+
+runner finished 191 cranks in 1297626219 ns (6793854/crank)
+9.423u 0.567s 7.138
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/zoeTests/swingset.json run -- simpleExchangeOk
+
+In 187 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                           75        75         0        75    0.4011
+kernelDevices                            1         1         0         1    0.0053
+kernelPromises                           6        95        89        16    0.0321
+kpUnresolved                             1        95        94        12    0.0053
+kpFulfilledToPresence                    0        53        53         8    0
+kpFulfilledToData                        5        41        36         8    0.0267
+kpRejected                               0         0         0         0    0
+runQueueLength                           0       187                   9    0
+syscalls                               283                                  1.5134
+syscallSend                             92                                  0.4920
+syscallSubscribe                        96                                  0.5134
+syscallFulfillToData                    41                                  0.2193
+syscallFulfillToPresence                53                                  0.2834
+syscallReject                            0                                  0
+syscallCallNow                           1                                  0.0053
+dispatches                             186                                  0.9947
+dispatchDeliver                         91                                  0.4866
+dispatchNotifyFulfillToData             39                                  0.2086
+dispatchNotifyFulfillToPresence         56                                  0.2995
+dispatchReject                           0                                  0
+clistEntries                           210       395       185       215    1.1230
+
+runner finished 187 cranks in 1303202521 ns (6968997/crank)
+9.450u 0.553s 7.139
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/zoeTests/swingset.json run -- simpleExchangeNotifier
+
+In 303 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                          107       107         0       107    0.3531
+kernelDevices                            1         1         0         1    0.0033
+kernelPromises                          19       154       135        23    0.0627
+kpUnresolved                             8       154       146        12    0.0264
+kpFulfilledToPresence                    0        74        74         8    0
+kpFulfilledToData                       11        72        61        12    0.0363
+kpRejected                               0         0         0         0    0
+runQueueLength                           0       303                  10    0
+syscalls                               458                                  1.5116
+syscallSend                            150                                  0.4950
+syscallSubscribe                       161                                  0.5314
+syscallFulfillToData                    72                                  0.2376
+syscallFulfillToPresence                74                                  0.2442
+syscallReject                            0                                  0
+syscallCallNow                           1                                  0.0033
+dispatches                             302                                  0.9967
+dispatchDeliver                        149                                  0.4917
+dispatchNotifyFulfillToData             70                                  0.2310
+dispatchNotifyFulfillToPresence         83                                  0.2739
+dispatchReject                           0                                  0
+clistEntries                           303       592       289       310    1
+
+runner finished 303 cranks in 1430090989 ns (4719772/crank)
+9.814u 0.594s 7.513
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/zoeTests/swingset.json run -- autoswapOk
+
+In 287 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                          110       110         0       110    0.3833
+kernelDevices                            1         1         0         1    0.0035
+kernelPromises                          11       145       134        17    0.0383
+kpUnresolved                             2       145       143        12    0.0070
+kpFulfilledToPresence                    0        70        70         8    0
+kpFulfilledToData                        9        73        64        12    0.0314
+kpRejected                               0         0         0         0    0
+runQueueLength                           0       287                   9    0
+syscalls                               433                                  1.5087
+syscallSend                            142                                  0.4948
+syscallSubscribe                       147                                  0.5122
+syscallFulfillToData                    73                                  0.2544
+syscallFulfillToPresence                70                                  0.2439
+syscallReject                            0                                  0
+syscallCallNow                           1                                  0.0035
+dispatches                             286                                  0.9965
+dispatchDeliver                        141                                  0.4913
+dispatchNotifyFulfillToData             71                                  0.2474
+dispatchNotifyFulfillToPresence         74                                  0.2578
+dispatchReject                           0                                  0
+clistEntries                           295       575       280       300    1.0279
+
+runner finished 287 cranks in 1431421160 ns (4987530/crank)
+10.363u 0.621s 7.768
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/zoeTests/swingset.json run -- sellTicketsOk
+
+In 187 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                           88        88         0        88    0.4706
+kernelDevices                            1         1         0         1    0.0053
+kernelPromises                           9        95        86        17    0.0481
+kpUnresolved                             2        95        93        13    0.0107
+kpFulfilledToPresence                    1        49        48         8    0.0053
+kpFulfilledToData                        6        44        38         7    0.0321
+kpRejected                               0         0         0         0    0
+runQueueLength                           0       187                   9    0
+syscalls                               284                                  1.5187
+syscallSend                             93                                  0.4973
+syscallSubscribe                        96                                  0.5134
+syscallFulfillToData                    44                                  0.2353
+syscallFulfillToPresence                49                                  0.2620
+syscallReject                            0                                  0
+syscallCallNow                           2                                  0.0107
+dispatches                             186                                  0.9947
+dispatchDeliver                         92                                  0.4920
+dispatchNotifyFulfillToData             41                                  0.2193
+dispatchNotifyFulfillToPresence         53                                  0.2834
+dispatchReject                           0                                  0
+clistEntries                           254       435       181       262    1.3583
+
+runner finished 187 cranks in 1976127435 ns (10567526/crank)
+10.683u 0.632s 8.220
+
+----------------------------------------------------------------------
+
+bin/runner  --init --stats --config demo/zoeTests/swingset.json run -- otcDeskOk
+
+In 344 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                          138       138         0       138    0.4012
+kernelDevices                            1         1         0         1    0.0029
+kernelPromises                          21       174       153        27    0.0610
+kpUnresolved                             2       174       172        17    0.0058
+kpFulfilledToPresence                    5        76        71         9    0.0145
+kpFulfilledToData                       14        95        81        17    0.0407
+kpRejected                               0         1         1         1    0
+runQueueLength                           0       344                  12    0
+syscalls                               521                                  1.5145
+syscallSend                            169                                  0.4913
+syscallSubscribe                       177                                  0.5145
+syscallFulfillToData                    95                                  0.2762
+syscallFulfillToPresence                76                                  0.2209
+syscallReject                            1                                  0.0029
+syscallCallNow                           3                                  0.0087
+dispatches                             342                                  0.9942
+dispatchDeliver                        167                                  0.4855
+dispatchNotifyFulfillToData             90                                  0.2616
+dispatchNotifyFulfillToPresence         83                                  0.2413
+dispatchReject                           1                                  0.0029
+clistEntries                           377       707       330       382    1.0959
+
+runner finished 344 cranks in 2165418263 ns (6294820/crank)
+11.160u 0.630s 8.454

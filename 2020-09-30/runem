@@ -1,0 +1,229 @@
+#!/bin/csh
+
+set ROUNDS = "--benchmark 100"
+set ALWAYS_OPTIONS = "--init --blockmode --blocksize 250 --logall --stats"
+set CMD = "run"
+
+# ----------------------------------------------------------------------
+
+echo running swap 100
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --benchmark 100 --logtag swap --config demo/swapBenchmark/swingset.json ${CMD} -- --prime"
+echo $LINE
+$LINE >  swap-benchmark.log
+
+bin/graphTime -o swapTime -l 'TIME: Swap 100 rounds' stats-swap
+bin/graphTime -o swapTime -l 'TIME: Swap 100 rounds' stats-swap --pdf
+bin/graphDisk -o swapDisk -l 'DISK: Swap 100 rounds' stats-swap
+bin/graphDisk -o swapDisk -l 'DISK: Swap 100 rounds' stats-swap --pdf
+bin/graphMem -o swapMem -l 'MEM: Swap 100 rounds' stats-swap
+bin/graphMem -o swapMem -l 'MEM: Swap 100 rounds' stats-swap --pdf
+
+# ----------------------------------------------------------------------
+
+echo running swap 100 with GC
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --forcegc --benchmark 100 --logtag swapgc --config demo/swapBenchmark/swingset.json ${CMD} -- --prime"
+echo $LINE
+$LINE >  swapgc-benchmark.log
+
+bin/graphTime -o swapgcTime -l 'TIME: Swap 100 rounds (forced GC)' stats-swapgc
+bin/graphTime -o swapgcTime -l 'TIME: Swap 100 rounds (forced GC)' stats-swapgc --pdf
+bin/graphDisk -o swapgcDisk -l 'DISK: Swap 100 rounds (forced GC)' stats-swapgc
+bin/graphDisk -o swapgcDisk -l 'DISK: Swap 100 rounds (forced GC)' stats-swapgc --pdf
+bin/graphMem -o swapgcMem -l 'MEM: Swap 100 rounds (forced GC)' stats-swapgc
+bin/graphMem -o swapgcMem -l 'MEM: Swap 100 rounds (forced GC)' stats-swapgc --pdf
+
+# ----------------------------------------------------------------------
+
+echo running swap 1000
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --benchmark 1000 --logtag swap1k --config demo/swapBenchmark/swingset.json ${CMD} -- --prime"
+echo $LINE
+$LINE >  swap1k-benchmark.log
+
+bin/graphTime -o swap1kTime -l 'TIME: Swap 1000 rounds' stats-swap1k
+bin/graphTime -o swap1kTime -l 'TIME: Swap 1000 rounds' stats-swap1k --pdf
+bin/graphDisk -o swap1kDisk -l 'DISK: Swap 1000 rounds' stats-swap1k
+bin/graphDisk -o swap1kDisk -l 'DISK: Swap 1000 rounds' stats-swap1k --pdf
+bin/graphMem -o swap1kMem -l 'MEM: Swap 1000 rounds' stats-swap1k
+bin/graphMem -o swap1kMem -l 'MEM: Swap 1000 rounds' stats-swap1k --pdf
+
+# ----------------------------------------------------------------------
+
+echo running swap 1000 with GC
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --forcegc --benchmark 1000 --logtag swap1kgc --config demo/swapBenchmark/swingset.json ${CMD} -- --prime"
+echo $LINE
+$LINE >  swap1kgc-benchmark.log
+
+bin/graphTime -o swap1kgcTime -l 'TIME: Swap 1000 rounds (forced GC)' stats-swap1kgc
+bin/graphTime -o swap1kgcTime -l 'TIME: Swap 1000 rounds (forced GC)' stats-swap1kgc --pdf
+bin/graphDisk -o swap1kgcDisk -l 'DISK: Swap 1000 rounds (forced GC)' stats-swap1kgc
+bin/graphDisk -o swap1kgcDisk -l 'DISK: Swap 1000 rounds (forced GC)' stats-swap1kgc --pdf
+bin/graphMem -o swap1kgcMem -l 'MEM: Swap 1000 rounds (forced GC)' stats-swap1kgc
+bin/graphMem -o swap1kgcMem -l 'MEM: Swap 1000 rounds (forced GC)' stats-swap1kgc --pdf
+
+# ----------------------------------------------------------------------
+
+echo running pingpong 100
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --benchmark 100 --logtag pingpong ${CMD} demo/pingPongBenchmark"
+echo $LINE
+$LINE > pingpong-benchmark.log
+
+bin/graphTime -o pingpongTime -l 'TIME: PingPong 100 rounds' stats-pingpong
+bin/graphTime -o pingpongTime -l 'TIME: PingPong 100 rounds' stats-pingpong --pdf
+bin/graphDisk -o pingpongDisk -l 'DISK: PingPong 100 rounds' stats-pingpong
+bin/graphDisk -o pingpongDisk -l 'DISK: PingPong 100 rounds' stats-pingpong --pdf
+bin/graphMem -o pingpongMem -l 'MEM: PingPong 100 rounds' stats-pingpong
+bin/graphMem -o pingpongMem -l 'MEM: PingPong 100 rounds' stats-pingpong --pdf
+
+# ----------------------------------------------------------------------
+
+echo running pingpong 100 with GC
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --forcegc --benchmark 100 --logtag pingponggc ${CMD} demo/pingPongBenchmark"
+echo $LINE
+$LINE > pingponggc-benchmark.log
+
+bin/graphTime -o pingponggcTime -l 'TIME: Pingpong 100 rounds (forced GC)' stats-pingponggc
+bin/graphTime -o pingponggcTime -l 'TIME: Pingpong 100 rounds (forced GC)' stats-pingponggc --pdf
+bin/graphDisk -o pingponggcDisk -l 'DISK: Pingpong 100 rounds (forced GC)' stats-pingponggc
+bin/graphDisk -o pingponggcDisk -l 'DISK: Pingpong 100 rounds (forced GC)' stats-pingponggc --pdf
+bin/graphMem -o pingponggcMem -l 'MEM: Pingpong 100 rounds (forced GC)' stats-pingponggc
+bin/graphMem -o pingponggcMem -l 'MEM: Pingpong 100 rounds (forced GC)' stats-pingponggc --pdf
+
+# ----------------------------------------------------------------------
+
+echo running pingpong 1000
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --benchmark 1000 --logtag pingpong1k ${CMD} demo/pingPongBenchmark"
+echo $LINE
+$LINE > pingpong1k-benchmark.log
+
+bin/graphTime -o pingpong1kTime -l 'TIME: Pingpong1k 1000 rounds' stats-pingpong1k
+bin/graphTime -o pingpong1kTime -l 'TIME: Pingpong1k 1000 rounds' stats-pingpong1k --pdf
+bin/graphDisk -o pingpong1kDisk -l 'DISK: Pingpong1k 1000 rounds' stats-pingpong1k
+bin/graphDisk -o pingpong1kDisk -l 'DISK: Pingpong1k 1000 rounds' stats-pingpong1k --pdf
+bin/graphMem -o pingpong1kMem -l 'MEM: Pingpong1k 1000 rounds' stats-pingpong1k
+bin/graphMem -o pingpong1kMem -l 'MEM: Pingpong1k 1000 rounds' stats-pingpong1k --pdf
+
+# ----------------------------------------------------------------------
+
+echo running pingpong 1000 with GC
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --forcegc --benchmark 1000 --logtag pingpong1kgc ${CMD} demo/pingPongBenchmark"
+echo $LINE
+$LINE > pingpong1kgc-benchmark.log
+
+bin/graphTime -o pingpong1kgcTime -l 'TIME: Pingpong1k 1000 rounds (forced GC)' stats-pingpong1kgc
+bin/graphTime -o pingpong1kgcTime -l 'TIME: Pingpong1k 1000 rounds (forced GC)' stats-pingpong1kgc --pdf
+bin/graphDisk -o pingpong1kgcDisk -l 'DISK: Pingpong1k 1000 rounds (forced GC)' stats-pingpong1kgc
+bin/graphDisk -o pingpong1kgcDisk -l 'DISK: Pingpong1k 1000 rounds (forced GC)' stats-pingpong1kgc --pdf
+bin/graphMem -o pingpong1kgcMem -l 'MEM: Pingpong1k 1000 rounds (forced GC)' stats-pingpong1kgc
+bin/graphMem -o pingpong1kgcMem -l 'MEM: Pingpong1k 1000 rounds (forced GC)' stats-pingpong1kgc --pdf
+
+# ----------------------------------------------------------------------
+
+echo running pingpong 10000
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --benchmark 10000 --logtag pingpong10k ${CMD} demo/pingPongBenchmark"
+echo $LINE
+$LINE > pingpong10k-benchmark.log
+
+bin/graphTime -o pingpong10kTime -l 'TIME: Pingpong10k 10000 rounds' stats-pingpong10k
+bin/graphTime -o pingpong10kTime -l 'TIME: Pingpong10k 10000 rounds' stats-pingpong10k --pdf
+bin/graphDisk -o pingpong10kDisk -l 'DISK: Pingpong10k 10000 rounds' stats-pingpong10k
+bin/graphDisk -o pingpong10kDisk -l 'DISK: Pingpong10k 10000 rounds' stats-pingpong10k --pdf
+bin/graphMem -o pingpong10kMem -l 'MEM: Pingpong10k 10000 rounds' stats-pingpong10k
+bin/graphMem -o pingpong10kMem -l 'MEM: Pingpong10k 10000 rounds' stats-pingpong10k --pdf
+
+# ----------------------------------------------------------------------
+
+echo running pingpong 10000 with GC
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --forcegc --benchmark 10000 --logtag pingpong10kgc ${CMD} demo/pingPongBenchmark"
+echo $LINE
+$LINE > pingpong10kgc-benchmark.log
+
+bin/graphTime -o pingpong10kgcTime -l 'TIME: Pingpong10k 10000 rounds (forced GC)' stats-pingpong10kgc
+bin/graphTime -o pingpong10kgcTime -l 'TIME: Pingpong10k 10000 rounds (forced GC)' stats-pingpong10kgc --pdf
+bin/graphDisk -o pingpong10kgcDisk -l 'DISK: Pingpong10k 10000 rounds (forced GC)' stats-pingpong10kgc
+bin/graphDisk -o pingpong10kgcDisk -l 'DISK: Pingpong10k 10000 rounds (forced GC)' stats-pingpong10kgc --pdf
+bin/graphMem -o pingpong10kgcMem -l 'MEM: Pingpong10k 10000 rounds (forced GC)' stats-pingpong10kgc
+bin/graphMem -o pingpong10kgcMem -l 'MEM: Pingpong10k 10000 rounds (forced GC)' stats-pingpong10kgc --pdf
+
+# ----------------------------------------------------------------------
+
+echo running exchange 100
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --benchmark 100 --logtag exchange --config demo/exchangeBenchmark/swingset.json ${CMD} -- --prime"
+echo $LINE
+$LINE > exchange-benchmark.log
+
+bin/graphTime -o exchangeTime -l 'TIME: Exchange 100 rounds' stats-exchange
+bin/graphTime -o exchangeTime -l 'TIME: Exchange 100 rounds' stats-exchange --pdf
+bin/graphDisk -o exchangeDisk -l 'DISK: Exchange 100 rounds' stats-exchange
+bin/graphDisk -o exchangeDisk -l 'DISK: Exchange 100 rounds' stats-exchange --pdf
+bin/graphMem -o exchangeMem -l 'MEM: Exchange 100 rounds' stats-exchange
+bin/graphMem -o exchangeMem -l 'MEM: Exchange 100 rounds' stats-exchange --pdf
+
+# ----------------------------------------------------------------------
+
+echo running exchange 100 with GC
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --forcegc --benchmark 100 --logtag exchangegc --config demo/exchangeBenchmark/swingset.json ${CMD} -- --prime"
+echo $LINE
+$LINE > exchangegc-benchmark.log
+
+bin/graphTime -o exchangegcTime -l 'TIME: Exchange 100 rounds (forced GC)' stats-exchangegc
+bin/graphTime -o exchangegcTime -l 'TIME: Exchange 100 rounds (forced GC)' stats-exchangegc --pdf
+bin/graphDisk -o exchangegcDisk -l 'DISK: Exchange 100 rounds (forced GC)' stats-exchangegc
+bin/graphDisk -o exchangegcDisk -l 'DISK: Exchange 100 rounds (forced GC)' stats-exchangegc --pdf
+bin/graphMem -o exchangegcMem -l 'MEM: Exchange 100 rounds (forced GC)' stats-exchangegc
+bin/graphMem -o exchangegcMem -l 'MEM: Exchange 100 rounds (forced GC)' stats-exchangegc --pdf
+
+# ----------------------------------------------------------------------
+
+echo running exchange 1000
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --benchmark 1000 --logtag exchange1k --config demo/exchangeBenchmark/swingset.json ${CMD} -- --prime"
+echo $LINE
+$LINE > exchange1k-benchmark.log
+
+bin/graphTime -o exchange1kTime -l 'TIME: Exchange 1000 rounds' stats-exchange1k
+bin/graphTime -o exchange1kTime -l 'TIME: Exchange 1000 rounds' stats-exchange1k --pdf
+bin/graphDisk -o exchange1kDisk -l 'DISK: Exchange 1000 rounds' stats-exchange1k
+bin/graphDisk -o exchange1kDisk -l 'DISK: Exchange 1000 rounds' stats-exchange1k --pdf
+bin/graphMem -o exchange1kMem -l 'MEM: Exchange 1000 rounds' stats-exchange1k
+bin/graphMem -o exchange1kMem -l 'MEM: Exchange 1000 rounds' stats-exchange1k --pdf
+
+# ----------------------------------------------------------------------
+
+echo running exchange 1000 with GC
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --forcegc --benchmark 1000 --logtag exchange1kgc --config demo/exchangeBenchmark/swingset.json ${CMD} -- --prime"
+echo $LINE
+$LINE > exchange1kgc-benchmark.log
+
+bin/graphTime -o exchange1kgcTime -l 'TIME: Exchange 1000 rounds (forced GC)' stats-exchange1kgc
+bin/graphTime -o exchange1kgcTime -l 'TIME: Exchange 1000 rounds (forced GC)' stats-exchange1kgc --pdf
+bin/graphDisk -o exchange1kgcDisk -l 'DISK: Exchange 1000 rounds (forced GC)' stats-exchange1kgc
+bin/graphDisk -o exchange1kgcDisk -l 'DISK: Exchange 1000 rounds (forced GC)' stats-exchange1kgc --pdf
+bin/graphMem -o exchange1kgcMem -l 'MEM: Exchange 1000 rounds (forced GC)' stats-exchange1kgc
+bin/graphMem -o exchange1kgcMem -l 'MEM: Exchange 1000 rounds (forced GC)' stats-exchange1kgc --pdf
+
+# ----------------------------------------------------------------------
+
+echo running exchange 4250
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --benchmark 4250 --logtag exchange4k --config demo/exchangeBenchmark/swingset.json ${CMD} -- --prime"
+echo $LINE
+$LINE > exchange4k-benchmark.log
+
+bin/graphTime -o exchange4kTime -l 'TIME: Exchange 4250 rounds' stats-exchange4k
+bin/graphTime -o exchange4kTime -l 'TIME: Exchange 4250 rounds' stats-exchange4k --pdf
+bin/graphDisk -o exchange4kDisk -l 'DISK: Exchange 4250 rounds' stats-exchange4k
+bin/graphDisk -o exchange4kDisk -l 'DISK: Exchange 4250 rounds' stats-exchange4k --pdf
+bin/graphMem -o exchange4kMem -l 'MEM: Exchange 4250 rounds' stats-exchange4k
+bin/graphMem -o exchange4kMem -l 'MEM: Exchange 4250 rounds' stats-exchange4k --pdf
+
+# ----------------------------------------------------------------------
+
+echo running exchange 4250 with GC
+set LINE = "bin/runner ${ALWAYS_OPTIONS} --forcegc --benchmark 4250 --logtag exchange4kgc --config demo/exchangeBenchmark/swingset.json ${CMD} -- --prime"
+echo $LINE
+$LINE > exchange4kgc-benchmark.log
+
+bin/graphTime -o exchange4kgcTime -l 'TIME: Exchange 4250 rounds (forced GC)' stats-exchange4kgc
+bin/graphTime -o exchange4kgcTime -l 'TIME: Exchange 4250 rounds (forced GC)' stats-exchange4kgc --pdf
+bin/graphDisk -o exchange4kgcDisk -l 'DISK: Exchange 4250 rounds (forced GC)' stats-exchange4kgc
+bin/graphDisk -o exchange4kgcDisk -l 'DISK: Exchange 4250 rounds (forced GC)' stats-exchange4kgc --pdf
+bin/graphMem -o exchange4kgcMem -l 'MEM: Exchange 4250 rounds (forced GC)' stats-exchange4kgc
+bin/graphMem -o exchange4kgcMem -l 'MEM: Exchange 4250 rounds (forced GC)' stats-exchange4kgc --pdf

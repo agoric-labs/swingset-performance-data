@@ -1,0 +1,51 @@
+In 11 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            9         9         0         9    0.8182
+kernelDevices                            1         1         0         1    0.0909
+kernelPromises                           1         6         5         5    0.0909
+kpUnresolved                             0         6         6         4    0     
+kpFulfilledToPresence                    0         1         1         1    0     
+kpFulfilledToData                        1         5         4         4    0.0909
+kpRejected                               0         0         0         0    0     
+runQueueLength                           0        11                   4    0     
+syscalls                                17                                  1.5455
+syscallSend                              6                                  0.5455
+syscallSubscribe                         5                                  0.4545
+syscallFulfillToData                     5                                  0.4545
+syscallFulfillToPresence                 1                                  0.0909
+syscallReject                            0                                  0     
+syscallCallNow                           0                                  0     
+dispatches                              11                                  1     
+dispatchDeliver                          6                                  0.5455
+dispatchNotifyFulfillToData              4                                  0.3636
+dispatchNotifyFulfillToPresence          1                                  0.0909
+dispatchReject                           0                                  0     
+clistEntries                            19        30        11        22    1.7273
+
+In 70000 cranks over 10000 rounds (7 cranks/round):
+Stat                              Delta  PerRound
+--------------------------------  -----  --------
+kernelObjects                         0    0     
+kernelDevices                         0    0     
+kernelPromises                        1    0.0001
+kpUnresolved                          0    0     
+kpFulfilledToPresence                 0    0     
+kpFulfilledToData                     1    0.0001
+kpRejected                            0    0     
+runQueueLength                        0    0     
+syscalls                         110000   11     
+syscallSend                       40000    4     
+syscallSubscribe                  30000    3     
+syscallFulfillToData              40000    4     
+syscallFulfillToPresence              0    0     
+syscallReject                         0    0     
+syscallCallNow                        0    0     
+dispatches                        70000    7     
+dispatchDeliver                   40000    4     
+dispatchNotifyFulfillToData       30000    3     
+dispatchNotifyFulfillToPresence       0    0     
+dispatchReject                        0    0     
+clistEntries                          0    0     
+
+runner finished 70011 cranks in 47111846536 ns (672920/crank)

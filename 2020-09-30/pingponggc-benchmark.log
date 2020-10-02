@@ -1,0 +1,461 @@
+SwingSet global metering is disabled (no replaceGlobalMeter)
+=> loading bootstrap.js
+=> setup called
+Replaying SwingSet transcripts
+=> bootstrap() called
+alice.introduce
+bob.hello sees alice
+=> alice.introduceYourselfTo(bob) resolved to 'alice setup done
+alice vat is happy
+'
+alice: contact is now named bob
+In 11 cranks:
+Stat                                 Value      Incs      Decs  MaxValue  PerCrank
+--------------------------------  --------  --------  --------  --------  --------
+kernelObjects                            9         9         0         9    0.8182
+kernelDevices                            1         1         0         1    0.0909
+kernelPromises                           1         6         5         5    0.0909
+kpUnresolved                             0         6         6         4    0     
+kpFulfilledToPresence                    0         1         1         1    0     
+kpFulfilledToData                        1         5         4         4    0.0909
+kpRejected                               0         0         0         0    0     
+runQueueLength                           0        11                   4    0     
+syscalls                                17                                  1.5455
+syscallSend                              6                                  0.5455
+syscallSubscribe                         5                                  0.4545
+syscallFulfillToData                     5                                  0.4545
+syscallFulfillToPresence                 1                                  0.0909
+syscallReject                            0                                  0     
+syscallCallNow                           0                                  0     
+dispatches                              11                                  1     
+dispatchDeliver                          6                                  0.5455
+dispatchNotifyFulfillToData              4                                  0.3636
+dispatchNotifyFulfillToPresence          1                                  0.0909
+dispatchReject                           0                                  0     
+clistEntries                            19        30        11        22    1.7273
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 1 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 2 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 3 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 4 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 5 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 6 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 7 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 8 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 9 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 10 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 11 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 12 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 13 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 14 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 15 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 16 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 17 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 18 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 19 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 20 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 21 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 22 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 23 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 24 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 25 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 26 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 27 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 28 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 29 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 30 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 31 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 32 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 33 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 34 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 35 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 36 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 37 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 38 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 39 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 40 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 41 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 42 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 43 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 44 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 45 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 46 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 47 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 48 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 49 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 50 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 51 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 52 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 53 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 54 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 55 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 56 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 57 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 58 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 59 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 60 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 61 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 62 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 63 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 64 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 65 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 66 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 67 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 68 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 69 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 70 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 71 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 72 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 73 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 74 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 75 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 76 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 77 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 78 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 79 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 80 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 81 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 82 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 83 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 84 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 85 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 86 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 87 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 88 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 89 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 90 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 91 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 92 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 93 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 94 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 95 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 96 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 97 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 98 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 99 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+alice: pings bob with hey!
+bob: pinged with "hey!", ponging alice
+alice: ponged with "hey!" by bob
+benchmark round 100 fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+In 700 cranks over 100 rounds (7 cranks/round):
+Stat                              Delta  PerRound
+--------------------------------  -----  --------
+kernelObjects                         0    0     
+kernelDevices                         0    0     
+kernelPromises                        1    0.0100
+kpUnresolved                          0    0     
+kpFulfilledToPresence                 0    0     
+kpFulfilledToData                     1    0.0100
+kpRejected                            0    0     
+runQueueLength                        0    0     
+syscalls                           1100   11     
+syscallSend                         400    4     
+syscallSubscribe                    300    3     
+syscallFulfillToData                400    4     
+syscallFulfillToPresence              0    0     
+syscallReject                         0    0     
+syscallCallNow                        0    0     
+dispatches                          700    7     
+dispatchDeliver                     400    4     
+dispatchNotifyFulfillToData         300    3     
+dispatchNotifyFulfillToPresence       0    0     
+dispatchReject                        0    0     
+clistEntries                          0    0     
+bootstrap result fulfilled: {"body":"{\"@qclass\":\"undefined\"}","slots":[]}
+runner finished 711 cranks in 3304267498 ns (4647352/crank)
